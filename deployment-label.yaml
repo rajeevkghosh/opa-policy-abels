@@ -3,37 +3,37 @@ kind: Deployment
 metadata:
   name: nginx-deployment
   labels:
-  - gcp_region: us
-  - owner: hybridenv
-  - application_division: pci
-  - application_name: app1
-  - application_role: web1
-  - environment: prod
-  - au: test
-  - created: "" 
+    gcp_region: us
+    owner: hybridenv
+    application_division: pci
+    application_name: app1
+    application_role: web1
+    environment: prod
+    au: test
+    created: "" 
 spec:
   replicas: 3
   selector:
     matchLabels:
-    - gcp_region: us
-    - owner: hybridenv
-    - application_division: pci
-    - application_name: app1
-    - application_role: web1
-    - environment: prod
-    - au: test
-    - created: "" 
+      gcp_region: us
+      owner: hybridenv
+      application_division: pci
+      application_name: app1
+      application_role: web1
+      environment: prod
+      au: test
+      created: "" 
   template:
     metadata:
       labels:
-      - gcp_region: us
-      - owner: hybridenv
-      - application_division: pci
-      - application_name: app1
-      - application_role: web1
-      - environment: prod
-      - au: test
-      - created: "" 
+        gcp_region: us
+        owner: hybridenv
+        application_division: pci
+        application_name: app1
+        application_role: web1
+        environment: prod
+        au: test
+        created: "" 
     spec:
       containers:
       - name: nginx
